@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <h1>Parcial 1 - División 132</h1> 
+    </header>
+
+    <main>
+        <section class= "seccion-usuarios">
+            <!-- titulo -->
+            <h2>Users</h2>
+            <hr>
+            <!-- Controles de filtros -->
+            <div class="controles">
+                <div class="filtros">
+
+                    <label>
+                        <input type="radio" name="filtro-estado" value="active"> Active 
+                    </label>
+                    <label>
+                        <input type="radio" name="filtro-estado" value="inactive"> Inactive
+                    </label>
+                    <label>
+                        <input type="radio" name="filtro-estado" value="all" checked> All
+                    </label>
+
+                </div>
+                <!-- barra de busqueda -->
+                <div class="busqueda">
+                    <input type="search" placeholder="Search users" id="input-busqueda" class = "barra-busqueda">
+                </div>
+
+            </div>
+                <!-- btn de acciones-->
+                <div class="acciones">
+                    <button type="button" id="btn-create">CREATE</button>
+                    <button type="button" id="btn-deactivate">DEACTIVATE</button>
+                    <button type="button" id="btn-reset-psw">RESET PASSWORD</button>
+                </div>
+
+            <div id= "user-container"></div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Renata Altube</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
