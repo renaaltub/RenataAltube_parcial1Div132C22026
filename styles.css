@@ -29,7 +29,7 @@ footer p {
     text-align: center;
     margin-top: 31px;
     font-size: 13px;
-    color: var(--color-gris-oscuro);
+    color: var(--color-primario);
 }
 
 /** Controles de la sección de usuarios */
@@ -76,6 +76,11 @@ hr {
     cursor: pointer;
 }
 
+.filtro-estado {
+    background-color: var(--color-gris-claro);
+    color: var(--color-primario);
+}
+
 /* Barra de busqueda */
 .barra-busqueda {
     padding: 4px 12px; 
@@ -115,14 +120,15 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    border: 1px solid var(--color-gris-oscuro);
+    border: 1px solid #a7a3a3;
 }
 
 th, td {
     padding: 12px 14px;
     text-align: left;
-    border-bottom: 1px solid var(--color-gris-oscuro);
+    border-bottom:  1px solid #a7a3a3;
     font-size: 13px;
+    border-right: 1px solid #a7a3a3;
 }
 
 th {
@@ -131,6 +137,7 @@ th {
 }
 tbody tr:nth-child(odd) {
     background-color: var(--color-gris-oscuro); 
+
 }
 
 .username, td.username { 
